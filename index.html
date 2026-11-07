@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #050406;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        #btn-launch {
+            padding: 15px 32px;
+            font-size: 1.1rem;
+            font-family: inherit;
+            color: #fff;
+            background: linear-gradient(135deg, #e63946, #8338ec);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s, opacity 0.3s;
+            z-index: 10;
+        }
+        #btn-launch:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(230, 57, 70, 0.6);
+        }
+        canvas {
+            display: none;
+            background-color: #030204;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn-launch" onclick="startAnimation()">Cliquer pour ouvrir le message</button>
+    <canvas id="ascii-canvas"></canvas>
+
+    <script src="app.js"></script>
+</body>
+</html>
