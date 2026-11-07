@@ -1,57 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For You</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        html, body {
-            width: 100%;
-            height: 100%;
-            background-color: #030204;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        #btn-launch {
-            padding: 18px 36px;
-            font-size: 1.2rem;
-            font-family: inherit;
-            color: #fff;
-            background: linear-gradient(135deg, #e63946, #8338ec);
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            box-shadow: 0 4px 20px rgba(230, 57, 70, 0.5);
-            transition: transform 0.2s;
-            z-index: 10;
-        }
-        #btn-launch:hover {
-            transform: scale(1.08);
-        }
-        canvas {
-            display: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: #030204;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>For You</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #030203;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: monospace;
+    }
+    canvas {
+      display: block;
+      background-color: #030203;
+    }
+  </style>
 </head>
 <body>
-
-    <button id="btn-launch" onclick="startAnimation()">Cliquer pour ouvrir le message</button>
-    <canvas id="ascii-canvas"></canvas>
-
-    <script src="app.js"></script>
+  <canvas id="canvas"></canvas>
+  <script src="app.js"></script>
 </body>
 </html>
